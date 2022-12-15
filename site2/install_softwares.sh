@@ -4,8 +4,8 @@ cd /home/ubuntu
 mkdir install
 cd install
 sudo apt-get update > update.log
-sudo apt-get update > upgrade.log
-sudo apt install strongswan strongswan-pki libcharon-extra-plugins libcharon-extauth-plugins libstrongswan-extra-plugins libtss2-tcti-tabrmd0 net-tools -y > strong.log
+sudo apt-get -y upgrade > upgrade.log
+sudo apt-get -y install strongswan strongswan-pki libcharon-extra-plugins libcharon-extauth-plugins libstrongswan-extra-plugins libtss2-tcti-tabrmd0 net-tools > strong.log
 echo "installing certs..." > certs.log
 sudo ipsec pki --gen --size 4096 --type rsa --outform pem > /etc/ipsec.d/private/ca.key.pem
 sudo ipsec pki --self --in /etc/ipsec.d/private/ca.key.pem --type rsa --dn "CN=site2@elias" --ca --lifetime 3650 --outform pem ca.cert.pem > /etc/ipsec.d/cacerts/ca.cert.pem

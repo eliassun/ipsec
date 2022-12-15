@@ -11,7 +11,7 @@ prod_1_route_table_cidr_v6 = "::/0"
 
 web_server_01_nic_ips = ["172.16.1.100"]
 
-us_east_2_ec2_ubuntu_ami   = "ami-0aeb7c931a5a61206"
+us_east_2_ec2_ubuntu_ami   = "ami-0283a57753b18025b"
 us_east_2_ec2_ubuntu_size  = "t2.nano" # "t2.micro" #"t2.nano"
 us_east_2_ec2_key_name     = "ohio-demo-keypair"
 us_east_2_ec2_ubuntu_az    = "us-east-2b"
