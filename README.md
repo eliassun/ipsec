@@ -1,9 +1,19 @@
 # ipsec
-These scripts set up a site-to-site IPSec with the correct security group. For the more detail setup, please visit my other repos:
+These scripts set up a site-to-site IPSec with the correct security group, including:
 
-https://github.com/eliassun/net4clouds for a completed network setup by Terraform
+1. Install, update and upgrade Ubuntu 22 to the latest version
 
-https://eliassun.github.io/strongwan.txt for the strongSwan IPSec setup
+2. Install strongSwan
+
+3. Create the certs that strongSwan needs
+
+My tech log shows how to configure IPSec:
+https://eliassun.github.io/strongwan.txt 
+
+A completed network setup by Terraform, instead of the current simple setup:
+https://github.com/eliassun/net4clouds
+
+Others:
 
 https://eliassun.github.io/strongSwan_route.txt for the network routing
 
