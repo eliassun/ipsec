@@ -139,7 +139,7 @@ resource "aws_instance" "test-server-ec2-02" {
         device_index = 0
         network_interface_id = aws_network_interface.web_server_nic_02.id
     }
-    #user_data = "${file("install_softwares.sh")}"
+    user_data = "${file("install_softwares.sh")}"
     tags = {
         Name = "test-server-ec2-02"
     }
