@@ -139,7 +139,7 @@ resource "aws_instance" "test-server-ec2-01" {
         device_index = 0
         network_interface_id = aws_network_interface.web_server_nic_01.id
     }
-    #user_data = "${file("install_softwares.sh")}"
+    user_data = "${file("install_softwares.sh")}"
     tags = {
         Name = "test-server-ec2-01"
     }
@@ -156,60 +156,3 @@ output "output-test-server-ec2-01-private-ip" {
 output "output-test-server-ec2-01-server-id" {
     value = aws_instance.test-server-ec2-01.id
 }
-
-# Import certs
-
-#resource "aws_iam_server_certificate" "elb01_test_cert" {
-#  name             = "elias-test-cert"
-#  certificate_body = file("certificate.crt")
-#  private_key      = file("private.pem")
-#}
-
-# Create a new load balancer
-/*
-resource "aws_elb" "us-east-2-elb01" {
-  name               = "web-us-east-2-elb01"
-  #availability_zones = var.us-east-2-az
-  subnets            = [aws_subnet.prod_vpc_1_subnet_1.id]
-  depends_on         = [aws_internet_gateway.prod_internet_gw_1]
-  security_groups = [aws_security_group.prod_1_sg_1.id]
-
-  listener {
-    instance_port     = 80
-    instance_protocol = "http"
-    lb_port           = 80
-    lb_protocol       = "http"
-  }
-
-  #listener {
-  #  instance_port      = 443
-  #  instance_protocol  = "http"
-  #  lb_port            = 443
-  #  lb_protocol        = "https"
-    #ssl_certificate_id = aws_iam_server_certificate.elb01_test_cert.arn
-  #}
-
-  health_check {
-    healthy_threshold   = 2
-    unhealthy_threshold = 2
-    timeout             = 3
-    target              = "HTTP:80/"
-    interval            = 30
-  }
-
-  instances                   = [aws_instance.test-server-ec2-01.id]
-  cross_zone_load_balancing   = true
-  idle_timeout                = 400
-  connection_draining         = true
-  connection_draining_timeout = 400
-
-  tags = {
-    Name = "web-us-east-2-elb01"
-  }
-}
-
-output "us-east-2-elb01-dns-name" {
-  description = "The DNS name of the ELB"
-  value       = aws_elb.us-east-2-elb01.dns_name
-}
-*/
