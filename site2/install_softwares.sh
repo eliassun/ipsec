@@ -18,5 +18,6 @@ sudo echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
 sudo echo "net.ipv6.conf.all.forwarding=1" >> /etc/sysctl.conf
 sudo echo "net.ipv4.conf.all.accept_redirects = 0" >>  /etc/sysctl.conf
 sudo echo "net.ipv6.conf.all.accept_redirects = 0" >>  /etc/sysctl.conf
+sudo sysctl -p
 echo "Done" > done.log
 
