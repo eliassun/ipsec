@@ -7,15 +7,13 @@ These scripts set up a site-to-site IPSec with the correct security group in two
 
 3. Create the certs that strongSwan needs
 
-For the remote access VPN(User VPN) by IPSec, it can be found from my writing https://eliassun.github.io/ipsec-remote.txt
-My tech log shows how to configure a site-to-site IPSec:
-https://eliassun.github.io/strongwan.txt 
+More:
 
-A completed network setup by Terraform, instead of the current simple setup:
-https://github.com/eliassun/net4clouds
+1. IPSec route
+https://eliassun.github.io/strongSwan_route.txt 
 
-Others:
+2. IPSec remote access VPN (MacOS)
+https://eliassun.github.io/ipsec-remote.txt
 
-https://eliassun.github.io/strongSwan_route.txt for the network routing
-
-https://eliassun.github.io/strongwan_decrpyt.txt decrpyts IPSec link. 
+3. IPSec data link decryption
+https://eliassun.github.io/strongwan_decrpyt.txt
