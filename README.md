@@ -7,7 +7,7 @@ These scripts set up a site-to-site IPSec with the correct security group in two
 
 3. Create the certs that strongSwan needs
 
-For the IPSec for the remote access VPN(User VPN), it can found from my writing https://eliassun.github.io/ipsec-remote.txt
+For the remote access VPN(User VPN) by IPSec, it can be found from my writing https://eliassun.github.io/ipsec-remote.txt
 My tech log shows how to configure a site-to-site IPSec:
 https://eliassun.github.io/strongwan.txt 
 
