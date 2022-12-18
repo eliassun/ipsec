@@ -19,6 +19,7 @@ https://eliassun.github.io/ipsec-remote.txt
 https://eliassun.github.io/strongwan_decrpyt.txt
 
 Usage:
+Add the correct AWS keys into variable.tf
 cd site1
 terraform init
 terraform apply --auto-approve
