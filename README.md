@@ -49,7 +49,7 @@ home network. If the client is on linux, then it needs to make sure ufw will not
 The OpenVPN doesn't have the firewall issue as this demo is using TCP with the port 443, 
 which will be treated as a https service from the most of corporation network. But it needs
 to install the cert and OpenVPN client.
-After a user is created from the website, it needs to download http://34.195.1.86/static/download/user_name_you_input.ovpn .
+After a user is created from the website, it needs to download http://http://104.238.180.66/static/download/user_name_you_input.ovpn .
 Also, it needs to install the VPN client from:
 
 https://openvpn.net/vpn-client/
