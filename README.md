@@ -58,6 +58,11 @@ OR other vendors, e.g. Aviatrix
 
 https://read.docs.aviatrix.com/Downloads/samlclient.html
 
+Still after the VPN connection is made from the client installed, then verify it by:
+
+ping 172.16.1.200
+
+
 
 # ipsec
 These site1/2 scripts set up a site-to-site IPSec with the correct security group in two AWS VPCs, including:
