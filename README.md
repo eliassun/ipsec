@@ -28,7 +28,7 @@ not routing all traffic of the client to the Internet through this server. It is
 
 Finally, it needs to make sure the firewall opens the UDP 50 and 4500, even the ESP, 
 if the clients(e.g. MacOS) is in a corporation network, which has the strict rules. It should work fine in the
-home network.
+home network. If the client is on linux, then it needs to make sure ufw will not block 50 and 4500.
 
 # ipsec
 These site1/2 scripts set up a site-to-site IPSec with the correct security group in two AWS VPCs, including:
