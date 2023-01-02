@@ -16,6 +16,10 @@ Select: Shared Secret
 
 Shared Key: 1(or password you created)
 
+Toggle the VPN switch to connect. After the VPN connection is done, verify it by:
+
+ping 172.16.1.200
+
 The production should have the more features, including Admin web login, OKTA/SAML VPN authentication, 
 the split/full tunnel, profile based routes, and even the remote VPN and site-to-site VPN bridge.
 
