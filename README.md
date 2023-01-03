@@ -1,6 +1,7 @@
 # Demo
 
-http://104.238.180.66 is a website to create/update/delete/list the remote VPN users.
+http://104.238.180.66 is a website to create/update/delete/list the remote VPN users, 
+including the IPSec remote user VPN and the OpenVPN user VPN.
 
 # IPSec Demo
 
