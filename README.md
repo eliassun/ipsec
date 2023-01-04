@@ -1,9 +1,9 @@
 # Demo
 
-http://104.238.180.66 is a website to create/update/delete/list the remote VPN users, 
-including the IPSec remote user VPN and the OpenVPN user VPN.
+http://104.238.180.66 is a website to create/update/delete/list the remote VPN users and site-to-site VPN
+including the IPSec remote user VPN, the OpenVPN user VPN, and IPSec site-to-site VPN. 
 
-# IPSec Demo
+# Demo: IPSec Remote User VPN
 
 [IPSec] Add A PSK User
 
@@ -41,7 +41,7 @@ Finally, it needs to make sure the firewall opens the UDP 50 and 4500, even the 
 if the clients(e.g. MacOS) is in a corporation network, which has the strict rules. It should work fine in the
 home network. If the client is on linux, then it needs to make sure ufw will not block 50 and 4500.
 
-# OpenVPN Demo
+# Demo: OpenVPN Remote User VPN
 
 [OpenVPN] Add A User
 
@@ -63,6 +63,13 @@ Still after the VPN connection is made from the client installed, then verify it
 
 ping 172.16.1.200
 
+
+# Demo: IPSec Site-to-Site VPN
+[IPSec Site-to-Site] Add A Connection
+[IPSec Site-to-Site] Delete A Connection
+[IPSec Site-to-Site] List All Connections
+[IPSec Site-to-Site] Up Connection
+[IPSec Site-to-Site] Check Connections' States
 
 
 # ipsec
