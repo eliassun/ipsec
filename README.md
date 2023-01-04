@@ -1,7 +1,7 @@
 # Demo
 
-http://104.238.180.66 is a website to create/update/delete/list the remote VPN users and site-to-site VPN
-including the IPSec remote user VPN, the OpenVPN user VPN, and IPSec site-to-site VPN. 
+http://104.238.180.66 is a website to create/update/delete/list the remote VPN users and site-to-site VPN, 
+including the IPSec remote user VPN, the OpenVPN user VPN, and the IPSec site-to-site VPN. 
 
 # Demo: IPSec Remote User VPN
 
@@ -65,10 +65,15 @@ ping 172.16.1.200
 
 
 # Demo: IPSec Site-to-Site VPN
+
 [IPSec Site-to-Site] Add A Connection
+
 [IPSec Site-to-Site] Delete A Connection
+
 [IPSec Site-to-Site] List All Connections
+
 [IPSec Site-to-Site] Up Connection
+
 [IPSec Site-to-Site] Check Connections' States
 
 
