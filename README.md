@@ -1,7 +1,8 @@
 # Demo
 
 http://104.238.180.66 is a website to create/update/delete/list the remote VPN users and site-to-site VPN, 
-including the IPSec remote user VPN, the OpenVPN user VPN, and the IPSec site-to-site VPN. 
+including the IPSec remote user VPN, the OpenVPN user VPN, and the IPSec site-to-site VPN. It also has the 
+Okta/SAML-based login, which will generate a token as a temporary password to sign in the remote VPN service.
 
 # Demo: IPSec Remote User VPN
 
@@ -62,6 +63,11 @@ https://read.docs.aviatrix.com/Downloads/samlclient.html
 Still after the VPN connection is made from the client installed, then verify it by:
 
 ping 172.16.1.200
+
+# Demo: Okta/SAML Remote User VPN
+This feature can create a single user for both IPSec remote VPN and OpenVPN. Then it will user Okta/SAML account to generate
+a temporary token for both IPSec remote VPN and OpenVPN. e.g. iOS can use the same e-mail and the token to login VPN service.
+Then the MacOS/Win still can use the same e-mail and the same token to login the OpenVPN.
 
 
 # Demo: IPSec Site-to-Site VPN
