@@ -67,7 +67,7 @@ ping 172.16.1.200
 # Demo: Okta/SAML Remote User VPN
 This feature can create a single username for both IPSec remote VPN and OpenVPN. 
 The endpoint user will login Okta/SAML first to generate a temporary token for 
-both IPSec remote VPN and OpenVPN. e.g. iOS can use the same e-mail and the token to login VPN service.
+both IPSec remote VPN and OpenVPN. e.g. iOS can use the e-mail and the token to login VPN service.
 Then the MacOS/Win still can use the same e-mail and the same token to login the OpenVPN.
 
 
