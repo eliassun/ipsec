@@ -70,6 +70,22 @@ The endpoint user will login Okta/SAML first to generate a temporary token for
 both IPSec remote VPN and OpenVPN. e.g. iOS can use the e-mail and the token to login VPN service.
 Then the MacOS/Win still can use the same e-mail and the same token to login the OpenVPN.
 
+1st step: Configure SAML App in IDP(e.g. Okta) ---> one time deal
+
+2nd step: Configure this App with the result of 1st step --> one time deal
+
+3nd step: Generate token for iOS/MacOS/Win/Linux VPN login ---> For every new login. 
+One login can last 1-24 hours, it depends on settings.
+
+For "1st step", it will configure an App in Okta, including the "App Name",  "Single Sign On URL", 
+"Entity ID"("Audience Restriction") and "Attributes". Then configure users(e-mail) to use this App. 
+
+For "2nd step", go to this demo website, configure the "App Name", """Single Sign On URL" and "Entity ID" 
+into "Add SAML App". Then Add the users(e-mail) into "Add User".
+
+After the "2nd step", go to "List Apps AND Generate Token" to get a new token to login VPN service. 
+The username to login VPN service is the e-mail to login Okta/SAML IDP.
+
 
 # Demo: IPSec Site-to-Site VPN
 
