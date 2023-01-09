@@ -1,6 +1,6 @@
 # Demo
 
-http://www.voipeye.com is a website to create/update/delete/list the remote VPN users and site-to-site VPN, 
+https://www.voipeye.com is a website to create/update/delete/list the remote VPN users and site-to-site VPN, 
 including the IPSec remote user VPN, the OpenVPN user VPN, and the IPSec site-to-site VPN. It also has the 
 Okta/SAML-based login, which will generate a token as a temporary password to sign in the remote VPN service.
 
