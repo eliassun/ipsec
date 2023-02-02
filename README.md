@@ -4,6 +4,10 @@ https://www.voipeye.com is a website to create/update/delete/list the remote VPN
 including the IPSec remote user VPN, the OpenVPN user VPN, and the IPSec site-to-site VPN. It also has the 
 Okta/SAML-based login, which will generate a token as a temporary password to sign in the remote VPN service.
 
+https://eliassun.github.io/vpc-edge/index.html is the manual to operate the server. 
+ 
+https://www.voipeye.com/get_saml_token is the link to generate the SAML token. The SAML demo account is username: elias@voipeye.com  password: Test!123 
+
 # Demo: IPSec Remote User VPN
 
 [IPSec] Add A PSK User
