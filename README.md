@@ -43,8 +43,7 @@ ping 172.16.1.200
 The production should have the more features, including Admin web login, OKTA/SAML VPN authentication, 
 the split/full tunnel, profile based routes, and even the remote VPN and site-to-site VPN bridge.
 
-This demo server only routes 172.16.0.0/16 of the client to the server, and it is a public IPSec test server only, 
-not routing all traffic of the client to the Internet through this server. It is a split tunnel mode.
+This demo server is on the split tunnel mode, which will only route the defined CIDR traffic to the VPN server.
 
 Finally, it needs to make sure the firewall opens the UDP 50 and 4500, even the ESP, 
 if the clients(e.g. MacOS) is in a corporation network, which has the strict rules. It should work fine in the
