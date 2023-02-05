@@ -6,7 +6,7 @@ Okta/SAML-based login, which will generate a token as a temporary password to si
 
 https://eliassun.github.io/vpc-edge/index.html is the manual to operate the server. 
  
-https://www.voipeye.com/get_saml_token is the link to generate the SAML token. The SAML demo account is username: elias@voipeye.com  password: Test!123
+https://www.voipeye.com/get_saml_token is the link to generate the SAML token. If you need an account for the testing of SAML account, please send email to eliassun@gmail.com.
 
 IPSec remotevpn is turned on for the VPN server www.voipeye.com, but the OpenVPN is turned off. If it needs the OpenVPN, please send the request to the email eliassun@gmail.com.
 
